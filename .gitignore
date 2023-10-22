@@ -125,6 +125,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Manually added
 *.sln
 *.njsproj
 .vs/
+OurWorld/bin
+OurWorld/obj
+OurWorld/config.json
