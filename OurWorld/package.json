@@ -1,0 +1,20 @@
+{
+  "name": "OurWorld",
+  "version": "0.0.0",
+  "description": "An archival bot for Discord roleplays",
+  "main": "index.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "@discordjs/builders": "^1.6.5",
+    "@discordjs/rest": "^2.0.1",
+    "chalk": "4.1.2",
+    "discord-api-types": "^0.37.60",
+    "discord-fetch-messages": "^2.5.0",
+    "discord.js": "13.16.0",
+    "mongodb": "^6.1.0",
+    "tiny-forest": "^1.2.0",
+    "winston": "^3.11.0"
+  }
+}
