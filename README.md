@@ -8,7 +8,6 @@ Designed by Amp and programmed by Avengineering.
 ### Current features: 
 - Type /exportchannelmessages to get a .txt file of the entire channel.
 - Compatible with nicknames,  for bots, and regular users!
-- 
 
 ### Future(?) features: 
 - Export based on timestamps/select start and end export messages.
