@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run",
+      "type": "node",
+      "request": "launch",
+      "program": "./app.js",
+      "console": "externalTerminal"
+    },
+    {
+      "name": "Deploy Commands",
+      "type": "node",
+      "request": "launch",
+      "program": "./deploy-commands.js",
+      "console": "externalTerminal"
+    }
+  ]
+}

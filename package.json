@@ -1,0 +1,22 @@
+{
+  "name": "ourworld",
+  "version": "0.0.0",
+  "description": "An archival bot for Discord roleplays.",
+  "main": "app.js",
+  "author": {
+    "name": "Avengineering and Amp"
+  },
+  "scripts": {
+    "deploy-commands": "node deploy-commands.js",
+    "start": "node app.js"
+  },
+  "eslintConfig": {},
+  "dependencies": {
+    "@discordjs/builders": "^1.9.0",
+    "@discordjs/rest": "^2.4.0",
+    "discord-api-types": "^0.37.114",
+    "discord.js": "^13.17.1",
+    "eslint": "^8.57.1",
+    "winchalk": "^1.0.1"
+  }
+}
