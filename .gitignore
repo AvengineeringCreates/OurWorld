@@ -128,3 +128,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Manually added
+.env
+tmp/*
+/obj
+/.vs
+/bin
+PROJECT_MIGRATION_LOG.txt
