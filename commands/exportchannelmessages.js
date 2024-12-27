@@ -41,9 +41,11 @@ module.exports = {
 					Winchalk.info("File written successfully at `" + fileName + "` !");
 
 					// Send file.
+					Winchalk.info("Sending file `" + fileName + "`...");
 					interaction.channel.send({
 						files: [fileName]
 					}).then(() => {
+						Winchalk.info("File `" + fileName + "` successfully sent! Deleting file.");
 						fs.unlinkSync(fileName);
 					});
 				}
