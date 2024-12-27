@@ -133,6 +133,12 @@ dist
 .env
 tmp/*
 /obj
-/.vs
 /bin
 PROJECT_MIGRATION_LOG.txt
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.unsaved
