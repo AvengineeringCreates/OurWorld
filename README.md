@@ -1,4 +1,4 @@
-# OurWorld v0.0.1
+# OurWorld v0.0.2
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
 A discord bot for the documentation of collaborative roleplays created by two Queer gamers who found themselves in fictional characters. Inspired by the Queer Worlds panel at QGCon 2023 and submitted as an entry.
@@ -10,6 +10,10 @@ Designed by Amp and programmed by Avengineering.
 
 ## Bot Creation
 ### From source
+
+<details>
+<summary>From source</summary>
+
 1. If you do not have a Discord bot Application set up on the Discord Developer Portal, check out [this guide from Discord.js to set it up on your account.](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
 2. Make sure you have [Node.js](https://nodejs.org/en) installed.
 3. Clone the repository using the Github desktop interface or the command line:
@@ -33,7 +37,13 @@ MAINTAINER_DISCORD="@yourdiscordusername"
 8. Use `npm start` to start the server.
 9. Run and enjoy!
 
+</details>
+
 ### Using Docker Compose
+
+<details>
+<summary>Using Docker Compose</summary>
+
 1. If you do not have a Discord bot Application set up on the Discord Developer Portal, check out [this guide from Discord.js to set it up on your account.](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
 2. Make sure Docker Engine is installed.
 3. Create a new directory for your Docker files. In this example we'll call it `MyOurWorld`.
@@ -56,6 +66,8 @@ MAINTAINER_DISCORD="@yourdiscordusername"
 - `CLIENT_ID` is your Discord bot's client ID. It is found on the Discord Developer Portal under YourApp > General Information > Application Id.
 - `MAINTAINER_DISCORD` is your Discord @username. It only is shown to users as contact information if there is an error. There are plans to change this to a move private route in the future.
 6. Run `docker compose up -d` to spin up and start your OurWorld container. Enjoy!
+
+</details>
 
 ## License
 This project is licensed under the NON-AI-MIT License. See the [LICENSE](LICENSE) file for details. Thank you to the maintainers of [non-ai-licenses/non-ai-licenses](https://github.com/non-ai-licenses/non-ai-licenses/tree/main) for providing the license.
