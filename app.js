@@ -11,7 +11,7 @@
 const fs = require('node:fs');
 const Discord = require('discord.js');
 const Winchalk = require('winchalk');
-const Coglib = require('./lib/coglib.js');
+const { Coglib } = require('./lib/coglib.js');
 
 // Get token
 //const { token, maintainerDiscord } = require('./config.json');
@@ -28,6 +28,17 @@ const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('
 for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
 	client.commands.set(command.data.name, command);
+}
+
+// Make sure tmp folder exists
+const tmpDir = './tmp';
+
+try {
+	if (!fs.existsSync(tmpDir)) {
+		fs.mkdirSync(tmpDir);
+	}
+} catch (e) {
+	Winchalk.error(e);
 }
 
 // Load events
@@ -78,7 +89,7 @@ client.on('interactionCreate', async interaction => {
 		console.error(error);
 		await Coglib.ReplyOrEditReply(interaction, {
 			content:
-				`There was an error executing your command. Please ` +
+				`There was a critical error executing your command. Please ` +
 				`reach out to my supervisor ` + process.env.MAINTAINER_DISCORD + ` via Discord to submit a bug ` +
 				`report.`,
 			embeds: [],
