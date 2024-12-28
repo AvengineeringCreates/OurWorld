@@ -25,11 +25,11 @@ module.exports = {
 		let registerProm = await new Promise((resolve, reject) => {
 			rest.put(Routes.applicationGuildCommands(process.env.CLIENT_ID, guild.id), { body: commands })
 				.then(() => {
-					Winchalk.info(`Successfully registered commands for Guild ${guild.id}.`);
+					Winchalk.info(`Successfully registered commands for Guild ${guild.id}, ${guild.name}.`);
 					resolve();
 				})
 				.catch(error => {
-					Winchalk.error(`A critical error has occured and OurWorld can not register commands for  ${guildIds[i]}.`);
+					Winchalk.error(`An error has occured and OurWorld can not register commands for  ${guildIds[i]}.`);
 					reject(error);
 				});
 		});
