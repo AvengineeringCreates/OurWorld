@@ -30,7 +30,7 @@ client.on('ready', async client => {
 	const guilds = client.guilds.cache
 	const guildIds = []
 
-	Winchalk.info('Deploying to guilds:');
+	Winchalk.info('Deploying to Guilds:');
 	guilds.forEach(guild => {
 		Winchalk.info(`\t ${guild.id}, ${guild.name}`);
 		guildIds.push(guild.id);
@@ -43,11 +43,11 @@ client.on('ready', async client => {
 		let registerProm = await new Promise((resolve, reject) => {
 			rest.put(Routes.applicationGuildCommands(process.env.CLIENT_ID, guildIds[i]), { body: commands })
 				.then(() => {
-					Winchalk.info(`Successfully registered commands for guild ${guildIds[i]}.`);
+					Winchalk.info(`Successfully registered commands for Guild ${guildIds[i]}.`);
 					resolve();
 				})
 				.catch(error => {
-					Winchalk.error(`A critical error has occured and OurWorld can not register commands for  ${guildIds[i]}.`);
+					Winchalk.error(`An error has occured and OurWorld can not register commands for ${guildIds[i]}.`);
 					reject(error);
 				});
 		});
