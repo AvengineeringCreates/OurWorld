@@ -7,8 +7,8 @@
     "name": "Avengineering and Amp"
   },
   "scripts": {
-    "deploy-commands": "node deploy-commands.js",
-    "start": "node app.js"
+    "deploy-commands": "node --env-file=.env deploy-commands.js",
+    "start": "node --env-file=.env app.js"
   },
   "eslintConfig": {},
   "dependencies": {
